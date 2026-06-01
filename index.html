@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>أثير الرواية | منصة الروايات العربية الأولى</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Marhey:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero-wrapper">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-light light-1"></div>
+        <div class="hero-light light-2"></div>
+
+        <!-- ========= NAVBAR========= -->
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-book-open logo-icon"></i>
+                <div class="logo-text"><span>أثير</span> الرواية</div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li class="nav-dropdown">
+                    <a href="#featured">الروايات <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#featured">الروايات المميزة</a></li>
+                        <li><a href="#">المقترحة لك</a></li>
+                        <li><a href="#">أحدث الإصدارات</a></li>
+                    </ul>
+                </li>
+                <li><a href="#authors">المؤلفون</a></li>
+                <li><a href="#Class">التصنيفات</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#about">من نحن</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="glass-icon-btn search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="btn-text">بحث</span>
+                </button>
+                <button class="glass-icon-btn cart-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="btn-text">المشتريات</span>
+                </button>
+                <button class="login-premium" id="loginBtn">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="text">تسجيل الدخول</span>
+                </button>
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- ========= HERO SECTION ========= -->
+        <section class="hero-section " id="home">
+            <div class="hero-content">
+                <span class="hero-badge">منصة الروايات العربية الأولى</span>
+                <h1>عِش داخل <span>أعظم العوالم الروائية</span> واكتشف قصصًا لا تُنسى</h1>
+                <p>منصة احترافية تجمع عشاق الروايات والكُتاب في مكان واحد، حيث تمتزج الفخامة البصرية مع أعماق الأدب
+                    والإبداع.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="hero-btn primary-btn">استكشف الروايات</a>
+                    <a href="#" class="hero-btn secondary-btn">ابدأ القراءة</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>+25K</h3><span>قارئ نشط</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>+4K</h3><span>رواية مميزة</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>+900</h3><span>كاتب محترف</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/ImgNV.png" alt="رواية">
+                </div>
+                <div class="floating-box box-1">
+                    <h4>الأكثر قراءة</h4>
+                    <p>مدينة الرماد</p>
+                </div>
+                <div class="floating-box box-2">
+                    <h4>رواية جديدة</h4>
+                    <p>أطياف السيليكون</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--الصفحة الثانية الروايات المميزة -->
+
+    <section class="featured-books" id="featured">
+        <div class="books-glow glow-left"></div>
+        <div class="books-glow glow-right"></div>
+
+        <div class="featured-container">
+            <!-- HEADER -->
+            <div class="featured-header">
+                <span class="featured-badge"><i class="fa-regular fa-star"></i> كنوز أدبية</span>
+                <h2>اكتشف أشهر الروايات <span>و الأكثر قراءة إثارة</span></h2>
+                <p>مجموعة مختارة بعناية من الروايات التي أسرت القرّاء بعوالمها المذهلة وشخصياتها العميقة وأحداثها
+                    المشوقة.</p>
+            </div>
+
+            <!-- FILTER BUTTONS تصفية -->
+            <div class="books-filter" id="Class">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="غموض">غموض</button>
+                <button class="filter-btn" data-filter="رومانسية">رومانسية</button>
+                <button class="filter-btn" data-filter="خيال علمي">خيال علمي</button>
+                <button class="filter-btn" data-filter="فانتازيا">فانتازيا</button>
+            </div>
+
+            <!-- BOOKS GRID -->
+            <div class="books-grid" id="booksGrid">
+                <!-- بطاقة 1 - غموض -->
+                <div class="book-card" data-category="غموض">
+                    <div class="book-image">
+                        <img src="images/ImgNV8.jpg" alt="مدينة الرماد">
+                        <span class="book-badge">الأكثر مبيعًا</span>
+                        <div class="book-rating"><i class="fa-solid fa-star"
+                                style="color: #FFD966; font-size: 0.7rem;"></i> 4.9</div>
+                    </div>
+                    <div class="book-content">
+                        <div class="book-category">غموض وتحقيق</div>
+                        <h3>مدينة الرماد</h3>
+                        <p>رواية نفسية غامضة تكشف أسرار مدينة تحكمها الظلال والخيانة والأحداث غير المتوقعة.</p>
+                        <div class="book-actions">
+                            <button class="details-btn">قراءة التفاصيل</button>
+                            <button class="chapters-btn">الفصول</button>
+                        </div>
+                        <div class="book-footer">
+                            <div class="book-author">
+                                <img src="images/imgnv22.jpg" alt="">
+                                <span>يوسف العتيبي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 2 - رومانسية -->
+                <div class="book-card" data-category="رومانسية">
+                    <div class="book-image">
+                        <img src="images/ImgNV2.jpg" alt="رسائل الشتاء">
+                        <span class="book-badge">جديد</span>
+                        <div class="book-rating"><i class="fa-solid fa-star"></i> 4.8</div>
+                    </div>
+                    <div class="book-content">
+                        <div class="book-category">رومانسية</div>
+                        <h3>رسائل الشتاء</h3>
+                        <p>قصة رومانسية مليئة بالمشاعر والرسائل القديمة التي تعيد إحياء حب ضائع عبر الزمن.</p>
+                        <div class="book-actions">
+                            <button class="details-btn">قراءة التفاصيل</button>
+                            <button class="chapters-btn">الفصول</button>
+                        </div>
+                        <div class="book-footer">
+                            <div class="book-author">
+                                <img src="images/imgNV88.png" alt="">
+                                <span> أمل الجعفراوي </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 3 - خيال علمي -->
+                <div class="book-card" data-category="خيال علمي">
+                    <div class="book-image">
+                        <img src="images/ImgNV1.jpg" alt="أطياف السيليكون">
+                        <span class="book-badge">خيال علمي</span>
+                        <div class="book-rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                    </div>
+                    <div class="book-content">
+                        <div class="book-category">خيال علمي</div>
+                        <h3>أطياف السيليكون</h3>
+                        <p>ملحمة مستقبلية تدور في عالم منهار تتحكم فيه الذكاءات الاصطناعية والذكريات الرقمية.</p>
+                        <div class="book-actions">
+                            <button class="details-btn">قراءة التفاصيل</button>
+                            <button class="chapters-btn">الفصول</button>
+                        </div>
+                        <div class="book-footer">
+                            <div class="book-author">
+                                <img src="images/imgnv33.jpg" alt="">
+                                <span> احمد عبد العزيز</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 4 فانتازيا -->
+                <div class="book-card" data-category="فانتازيا">
+                    <div class="book-image">
+                        <img src="images/ImgNV5.jpg" alt="مملكة الأحجار">
+                        <span class="book-badge">فانتازيا</span>
+                        <div class="book-rating"><i class="fa-solid fa-star"></i> 4.7</div>
+                    </div>
+                    <div class="book-content">
+                        <div class="book-category">فانتازيا ملحمية</div>
+                        <h3>مملكة الأحجار</h3>
+                        <p>عوالم سحرية وصراعات خالدة في رحلة البحث عن التاج المفقود وسط قوى الظلام.</p>
+                        <div class="book-actions">
+                            <button class="details-btn">قراءة التفاصيل</button>
+                            <button class="chapters-btn">الفصول</button>
+                        </div>
+                        <div class="book-footer">
+                            <div class="book-author">
+                                <img src="images/imgNV77.png" alt="">
+                                <span>ريتاج الورفلي </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 5 خيال علمي 2 -->
+                <div class="book-card" data-category="خيال علمي">
+                    <div class="book-image">
+                        <img src="images/ImgNV4.png" alt="كود الظل">
+                        <span class="book-badge">خيال علمي</span>
+                        <div class="book-rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                    </div>
+                    <div class="book-content">
+                        <div class="book-category">خيال علمي</div>
+                        <h3>كود الظل</h3>
+                        <p>هاكر خارق يكتشف شبكة حكومية سرية تغير مصير البشرية في مستقبل بائس.</p>
+                        <div class="book-actions">
+                            <button class="details-btn">قراءة التفاصيل</button>
+                            <button class="chapters-btn">الفصول</button>
+                        </div>
+                        <div class="book-footer">
+                            <div class="book-author">
+                                <img src="images/imgnv11.jpg" alt="">
+                                <span>زياد المصراتي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة 6 رومانسية جديدة -->
+                <div class="book-card" data-category="رومانسية">
+                    <div class="book-image">
+                        <img src="images/ImgNV7.jpg" alt="عطر الذكرى">
+                        <span class="book-badge">مميز</span>
+                        <div class="book-rating"><i class="fa-solid fa-star"></i> 4.6</div>
+                    </div>
+                    <div class="book-content">
+                        <div class="book-category">رومانسية</div>
+                        <h3>عطر الذكرى</h3>
+                        <p>قصة حب تنبض بالحنين بين ماضٍ عالق ومستقبل لا تحكمه المصادفات.</p>
+                        <div class="book-actions">
+                            <button class="details-btn">قراءة التفاصيل</button>
+                            <button class="chapters-btn">الفصول</button>
+                        </div>
+                        <div class="book-footer">
+                            <div class="book-author">
+                                <img src="images/ImgNV44.png" alt="">
+                                <span>جوانا مخول</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--الصفحة الثالثة ماذا نقدم -->
+    <!--WHAT WE OFFER-->
+    <section class="services-section" id="services">
+        <!-- Background Effects -->
+        <div class="services-blur blur-1"></div>
+        <div class="services-blur blur-2"></div>
+        <div class="services-container">
+            <!-- Header -->
+            <div class="services-header">
+                <span class="services-badge">
+                    ماذا نقدم
+                </span>
+                <h2>
+                    تجربة أدبية
+                    <span>تفوق التوقعات</span>
+                </h2>
+                <p>
+                    نوفر منصة متكاملة لعشاق الروايات والكُتاب،
+                    تجمع بين التصميم العصري والتجربة التفاعلية
+                    والمحتوى الأدبي الراقي.
+                </p>
+            </div>
+            <!-- Timeline -->
+            <div class="services-timeline">
+                <!-- Item -->
+                <div class="service-item">
+                    <!-- Number -->
+                    <div class="service-number">
+                        01
+                    </div>
+                    <!-- Card -->
+                    <div class="service-card group">
+                        <!-- Glow -->
+                        <div class="card-glow"></div>
+                        <!-- Icon -->
+                        <div class="service-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <!-- Content -->
+                        <div class="service-content">
+                            <h3>
+                                مكتبة روايات ضخمة
+                            </h3>
+                            <p>
+                                آلاف الروايات في مختلف التصنيفات
+                                من الغموض والفانتازيا إلى الرومانسية
+                                والخيال العلمي.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="service-item reverse">
+                    <div class="service-number">
+                        02
+                    </div>
+                    <div class="service-card group">
+                        <div class="card-glow"></div>
+                        <div class="service-icon">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>
+                                دعم الكُتاب والمؤلفين
+                            </h3>
+                            <p>
+                                منصة احترافية تمنح الكُتاب فرصة
+                                لنشر أعمالهم والوصول إلى جمهور واسع
+                                من القرّاء.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="service-item">
+                    <div class="service-number">
+                        03
+                    </div>
+                    <div class="service-card group">
+                        <div class="card-glow"></div>
+                        <div class="service-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>
+                                تجربة استخدام فاخرة
+                            </h3>
+                            <p>
+                                تصميم عصري مليء بالحركات الانتقالية
+                                والانسيابية ليمنح المستخدم تجربة قراءة
+                                مريحة ومذهلة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="service-item reverse">
+                    <div class="service-number">
+                        04
+                    </div>
+                    <div class="service-card group">
+                        <div class="card-glow"></div>
+                        <div class="service-icon">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>
+                                روايات مميزة باستمرار
+                            </h3>
+                            <p>
+                                تحديثات يومية لأحدث الروايات
+                                والأعمال الأدبية الأكثر شهرة
+                                والأعلى تقييمًا.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================  
+     AUTHORS SECTION (PRO)  
+========================= -->
+    <section class="authors-section" id="authors">
+        <!-- Background Effects -->
+        <div class="authors-bg-circle circle-1"></div>
+        <div class="authors-bg-circle circle-2"></div>
+
+        <div class="container">
+            <!-- Section Header -->
+            <div class="authors-header">
+                <span class="section-badge">أشهر الكُتاب</span>
+                <h2>
+                    نخبة من أعظم المؤلفين
+                    <span>في عالم الروايات</span>
+                </h2>
+                <p>
+                    اكتشف أبرز الكُتاب الذين تركوا بصمة خالدة في الأدب العربي والعالمي،
+                    واستمتع برحلة بين أعمالهم الأكثر شهرة وتأثيرًا.
+                </p>
+            </div>
+
+            <!-- Authors Grid -->
+            <div class="authors-grid">
+
+                <!-- Author Card 1 -->
+                <div class="author-card">
+                    <div class="author-image-wrapper">
+                        <div class="author-image">
+                            <img src="images/imgnv22.jpg" alt="يوسف العتيبي">
+                        </div>
+                    </div>
+                    <div class="author-content">
+                        <div class="author-top">
+                            <h3>يوسف العتيبي</h3>
+                            <span class="author-type">📚 روايات غموض</span>
+                        </div>
+
+                        <div class="author-quote">
+                            <p>“كاتب اشتهر بأسلوبه العميق وأحداثه المعقدة التي تجمع بين الغموض والتحقيق النفسي.”</p>
+                        </div>
+
+                        <div class="author-stats">
+                            <div class="stat-box">
+                                <h4>32</h4>
+                                <span>رواية</span>
+                            </div>
+                            <div class="stat-box">
+                                <h4>1.2M</h4>
+                                <span>قارئ</span>
+                            </div>
+                            <div class="stat-box">
+                                <h4>4.9 ★</h4>
+                                <span>تقييم</span>
+                            </div>
+                        </div>
+
+                        <div class="author-buttons">
+                            <button class="author-btn info-btn">
+                                <span>ℹ️</span> معلومات المؤلف
+                            </button>
+                            <button class="author-btn explore-btn">
+                                استكشاف الأعمال <span>→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Author Card 2 -->
+                <div class="author-card">
+                    <div class="author-image-wrapper">
+                        <div class="author-image">
+                            <img src="images/imgnv66.png" alt="ليان السامرائي">
+                        </div>
+                    </div>
+                    <div class="author-content">
+                        <div class="author-top">
+                            <h3>ليان السامرائي</h3>
+                            <span class="author-type">💖 روايات رومانسية</span>
+                        </div>
+
+                        <div class="author-quote">
+                            <p>“تمتلك أسلوبًا شاعريًا يمزج بين المشاعر العميقة والحوارات المؤثرة التي تلامس القارئ.”</p>
+                        </div>
+                        <div class="author-stats">
+                            <div class="stat-box">
+                                <h4>21</h4>
+                                <span>رواية</span>
+                            </div>
+                            <div class="stat-box">
+                                <h4>870K</h4>
+                                <span>قارئ</span>
+                            </div>
+                            <div class="stat-box">
+                                <h4>4.8 ★</h4>
+                                <span>تقييم</span>
+                            </div>
+                        </div>
+                        <div class="author-buttons">
+                            <button class="author-btn info-btn">
+                                <span>ℹ️</span> معلومات المؤلف
+                            </button>
+                            <button class="author-btn explore-btn">
+                                استكشاف الأعمال <span>→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Author Card 3 -->
+                <div class="author-card">
+                    <div class="author-image-wrapper">
+                        <div class="author-image">
+                            <img src="images/imgnv55.png" alt="آدم نوفل">
+                        </div>
+                    </div>
+                    <div class="author-content">
+                        <div class="author-top">
+                            <h3>آدم نوفل</h3>
+                            <span class="author-type">🚀 خيال علمي</span>
+                        </div>
+
+                        <div class="author-quote">
+                            <p>“يبدع في بناء العوالم المستقبلية المعقدة ويقدم أفكارًا فلسفية داخل أحداث مليئة بالإثارة.”
+                            </p>
+                        </div>
+
+                        <div class="author-stats">
+                            <div class="stat-box">
+                                <h4>17</h4>
+                                <span>رواية</span>
+                            </div>
+                            <div class="stat-box">
+                                <h4>950K</h4>
+                                <span>قارئ</span>
+                            </div>
+                            <div class="stat-box">
+                                <h4>4.9 ★</h4>
+                                <span>تقييم</span>
+                            </div>
+                        </div>
+
+                        <div class="author-buttons">
+                            <button class="author-btn info-btn">
+                                <span>ℹ️</span> معلومات المؤلف
+                            </button>
+                            <button class="author-btn explore-btn">
+                                استكشاف الأعمال <span>→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================
+NOVELS SHOP PAGE - PRO VERSION (بدون بيكسل)
+========================= -->
+    <section class="shop-section" id="shop">
+        <!-- Background Effects -->
+        <div class="shop-bg"></div>
+        <div class="shop-bg-circle circle-shop-1"></div>
+        <div class="shop-bg-circle circle-shop-2"></div>
+        <div class="shop-container">
+            <!-- HEADER -->
+            <div class="shop-header">
+                <span class="shop-badge">📚 متجر الروايات</span>
+                <h2>
+                    اشترِ رواياتك المفضلة
+                    <span>بأسعار مميزة</span>
+                </h2>
+                <p>
+                    اختر من مجموعة واسعة من الروايات الأكثر مبيعًا
+                    واستمتع بتجربة شراء أنيقة وسريعة.
+                </p>
+            </div>
+            <!-- FILTER DROPDOWN (قوائم منسدلة) -->
+            <div class="shop-filter-section">
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label class="filter-label">
+                            <i class="fa-solid fa-tag"></i> التصنيف
+                        </label>
+                        <select class="filter-select" id="categoryFilter">
+                            <option value="all">الكل</option>
+                            <option value="غموض">🔍 غموض</option>
+                            <option value="رومانسية">💖 رومانسية</option>
+                            <option value="خيال علمي">🚀 خيال علمي</option>
+                            <option value="فانتازيا">🐉 فانتازيا</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">
+                            <i class="fa-solid fa-arrow-down-wide-short"></i> ترتيب حسب
+                        </label>
+                        <select class="filter-select" id="sortFilter">
+                            <option value="default">الأفتراضي</option>
+                            <option value="price-low">السعر: من الأقل للأعلى</option>
+                            <option value="price-high">السعر: من الأعلى للأقل</option>
+                            <option value="rating">أعلى تقييم</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">
+                            <i class="fa-solid fa-dollar-sign"></i> نطاق السعر
+                        </label>
+                        <select class="filter-select" id="priceFilter">
+                            <option value="all">الكل</option>
+                            <option value="under10">أقل من $10</option>
+                            <option value="10-15">$10 - $15</option>
+                            <option value="over15">أكثر من $15</option>
+                        </select>
+                    </div>
+                    <div class="filter-group search-group">
+                        <label class="filter-label">
+                            <i class="fa-solid fa-search"></i> بحث
+                        </label>
+                        <input type="text" class="search-input" id="searchInput" placeholder="ابحث عن رواية...">
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCTS GRID -->
+            <div class="shop-grid" id="shopGrid"></div>
+
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fa-solid fa-book-open"></i>
+                <p>لا توجد روايات تطابق بحثك</p>
+            </div>
+        </div>
+    </section>
+    <!-- =========================
+     ABOUT US SECTION - RTL PRO VERSION
+========================= -->
+    <section class="about-section" id="about">
+
+        <!-- Decorative Background -->
+        <div class="about-glow glow-1"></div>
+        <div class="about-glow glow-2"></div>
+        <div class="about-glow glow-3"></div>
+
+        <div class="about-container">
+
+            <!-- RIGHT CONTENT -->
+            <div class="about-content reveal-right">
+
+                <div class="about-header">
+                    <span class="about-badge floating-badge">
+                        <i class="fa-solid fa-book-quran"></i> من نحن
+                    </span>
+                    <h2 class="about-title glow-title">
+                        نحن لا نبيع روايات فقط...
+                        <span>بل نصنع عوالم كاملة</span>
+                    </h2>
+                </div>
+
+                <div class="about-quote reveal-item" data-delay="100">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>منصة أدبية احترافية تهدف إلى جمع عشاق الروايات والكُتاب في مكان واحد مليء بالإبداع، حيث تتحول
+                        الكلمات إلى تجارب حية والمشاعر إلى رحلات لا تُنسى.</p>
+                </div>
+
+                <p class="about-text reveal-item" data-delay="200">
+                    نسعى إلى تقديم تجربة قراءة فاخرة تجمع بين التصميم العصري والمحتوى الأدبي العميق، مع دعم الكُتاب
+                    العرب وإبراز أعمالهم أمام جمهور واسع من القرّاء.
+                </p>
+
+                <!-- Features -->
+                <div class="about-features">
+                    <div class="feature-box reveal-item" data-delay="300">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>مكتبة ضخمة</h4>
+                            <p>آلاف الروايات في مختلف التصنيفات</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box reveal-item" data-delay="350">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>كُتاب مميزون</h4>
+                            <p>منصة تجمع أشهر وأفضل المؤلفين</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box reveal-item" data-delay="400">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>تجربة فاخرة</h4>
+                            <p>تصميم أنيق وواجهة قراءة مريحة</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="about-buttons reveal-item" data-delay="450">
+                    <a href="#" class="about-btn primary-btn glow-on-hover">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        اكتشف الروايات
+                    </a>
+                    <a href="#" class="about-btn secondary-btn">
+                        <i class="fa-solid fa-message"></i>
+                        تواصل معنا
+                    </a>
+                </div>
+            </div>
+
+            <!-- LEFT IMAGES -->
+            <div class="about-images reveal-left">
+                <div class="main-image floating-image">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop"
+                        alt="مكتبة روايات">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <div class="small-image reveal-item" data-delay="200">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop"
+                        alt="قراءة رواية">
+                </div>
+
+                <div class="floating-card card-1 pulse-card" data-delay="300">
+                    <div class="card-icon">📚</div>
+                    <h4>+25,000</h4>
+                    <p>قارئ نشط</p>
+                    <div class="card-progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="floating-card card-2 pulse-card" data-delay="400">
+                    <div class="card-icon">⭐</div>
+                    <h4>+4,000</h4>
+                    <p>رواية مميزة</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <div class="floating-card card-3 pulse-card" data-delay="500">
+                    <div class="card-icon">👥</div>
+                    <h4>+120</h4>
+                    <p>كاتب مبدع</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================
+      FOOTER - PRO VERSION
+========================= -->
+    <footer class="footer-section" id="footer">
+        <!-- Glow Effects -->
+        <div class="footer-glow glow-1"></div>
+        <div class="footer-glow glow-2"></div>
+        <div class="footer-glow glow-3"></div>
+        <div class="footer-container">
+            <!-- TOP SECTION -->
+            <div class="footer-top">
+                <!-- BRAND SECTION -->
+                <div class="footer-brand reveal-footer">
+                    <div class="footer-logo">
+                        <span>أثير</span> الرواية
+                    </div>
+                    <p>
+                        منصة أدبية احترافية لعشاق الروايات والكُتاب،
+                        حيث تلتقي العوالم الخيالية بالفخامة البصرية
+                        وتجربة القراءة العصرية.
+                    </p>
+                    <!-- Social Icons -->
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- LINKS SECTION -->
+                <div class="footer-links">
+                    <!-- Column 1 -->
+                    <div class="footer-column reveal-footer" data-delay="100">
+                        <h3>
+                            <i class="fa-regular fa-compass"></i> الصفحات
+                        </h3>
+                        <ul>
+                            <li><a href="#home">الرئيسية</a></li>
+                            <li><a href="#featured">الروايات</a></li>
+                            <li><a href="#authors">المؤلفون</a></li>
+                            <li><a href="#about">من نحن</a></li>
+                            <li><a href="#contact">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="footer-column reveal-footer" data-delay="200">
+                        <h3>
+                            <i class="fa-regular fa-star"></i> التصنيفات
+                        </h3>
+                        <ul>
+                            <li><a href="#">🔍 غموض</a></li>
+                            <li><a href="#">🐉 فانتازيا</a></li>
+                            <li><a href="#">💖 رومانسية</a></li>
+                            <li><a href="#">🚀 خيال علمي</a></li>
+                            <li><a href="#">🎭 دراما</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="footer-column reveal-footer" data-delay="300">
+                        <h3>
+                            <i class="fa-regular fa-circle-question"></i> الدعم
+                        </h3>
+                        <ul>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">الشروط والأحكام</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">الدعم الفني</a></li>
+                            <li><a href="#">مركز المساعدة</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- NEWSLETTER SECTION -->
+            <div class="newsletter-box reveal-footer" data-delay="400">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="newsletter-text">
+                        <h2>اشترك في النشرة البريدية</h2>
+                        <p>احصل على أحدث الروايات والعروض والتحديثات مباشرة إلى بريدك الإلكتروني.</p>
+                    </div>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="input-wrapper">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                    </div>
+                    <button type="submit">
+                        اشتراك <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            <!-- BOTTOM SECTION -->
+            <div class="footer-bottom reveal-footer" data-delay="500">
+                <p>
+                    © 2026 جميع الحقوق محفوظة لدى
+                    <span>أثير الرواية</span>
+                </p>
+                <div class="payment-methods">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

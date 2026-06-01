@@ -235,7 +235,7 @@ body {
     transform: translateX(-4px);
 }
 
-/* Actions area - أزرار احترافية جداً */
+/* Actions area */
 .nav-actions {
     display: flex;
     align-items: center;
@@ -382,7 +382,7 @@ body {
     width: 90%;
 }
 
-/* Buttons hero - احترافية عالية */
+/* Buttons hero*/
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
@@ -559,8 +559,8 @@ body {
 }
 
 /* =========================
-           RESPONSIVE - متجاوب مع كل الشاشات
-        ========================= */
+ RESPONSIVE - متجاوب مع كل الشاشات
+========================= */
 @media (max-width: 1250px) {
     .hero-content h1 {
         font-size: 3.4rem;
@@ -724,8 +724,8 @@ body {
 
 /* الصفحة الثانية */
 /* =========================
-           FEATURED SECTION - وحدات نسبية فقط (rem, vw, %)
-        ========================= */
+ FEATURED SECTION - وحدات نسبية فقط (rem, vw, %)
+========================= */
 .featured-books {
     position: relative;
     padding: 6rem 5%;
@@ -767,7 +767,7 @@ body {
     margin: 0 auto;
 }
 
-/* HEADER أنيق */
+/* HEADER  */
 .featured-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -811,7 +811,7 @@ body {
     width: 90%;
 }
 
-/* FILTER BUTTONS - متطور وحدات نسبية */
+/* FILTER BUTTONS */
 .books-filter {
     display: flex;
     justify-content: center;
@@ -873,8 +873,10 @@ body {
     margin-top: 1rem;
 }
 
-/* =========== بطاقة الكتاب (BOOK CARD) احترافية 
-           مع خطوط ضوئية تدور حولها وبدون بكسل ========= */
+/* =========== 
+بطاقة الكتاب (BOOK CARD)  
+مع خطوط ضوئية تدور حولها  
+ ========= */
 .book-card {
     position: relative;
     background: rgba(18, 14, 12, 0.68);
@@ -1083,7 +1085,7 @@ body {
     color: #eddabc;
 }
 
-/* RESPONSIVE كامل بدون بكسل  */
+/* RESPONSIVE */
 @media (max-width: 75rem) {
     .books-grid {
         gap: 1.8rem;
@@ -1193,9 +1195,6 @@ button:active {
 /*-------------------------------------
    WHAT WE OFFER - PRO VERSION
 -------------------------------------*/
-/* =========================
-   WHAT WE OFFER
-========================= */
 .services-section {
     position: relative;
     padding: 130px 7%;
@@ -2022,14 +2021,9 @@ button:active {
 }
 
 /*-------------------------------------
-   SHOP SECTION - بدون بيكسل
+   SHOP SECTION 
    الوحدات المستخدمة: rem, em, vw, vh, %
 -------------------------------------*/
-
-/* =========================
-   SHOP SECTION
-========================= */
-
 .shop-section {
     position: relative;
     padding: 8rem 7%;
@@ -2457,11 +2451,6 @@ button:active {
    ABOUT SECTION - RTL PRO VERSION
    مع مؤثرات الطفو والإشعاع والظهور التدريجي
 -------------------------------------*/
-
-/* =========================
-   ABOUT SECTION
-========================= */
-
 .about-section {
     position: relative;
     padding: 8rem 7%;
@@ -3148,11 +3137,6 @@ button:active {
    FOOTER SECTION - PRO VERSION
    بدون بيكسل + استجابة كاملة
 -------------------------------------*/
-
-/* =========================
-   FOOTER
-========================= */
-
 .footer-section {
     position: relative;
     padding: 5rem 7% 2rem;
@@ -3234,7 +3218,6 @@ button:active {
 /* =========================
    TOP SECTION
 ========================= */
-
 .footer-top {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
@@ -3310,7 +3293,6 @@ button:active {
 /* =========================
    LINKS SECTION
 ========================= */
-
 .footer-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -3372,7 +3354,6 @@ button:active {
 /* =========================
    NEWSLETTER SECTION
 ========================= */
-
 .newsletter-box {
     margin-bottom: 3.75rem;
     padding: 2.5rem;
@@ -3522,7 +3503,6 @@ button:active {
 /* =========================
    BOTTOM SECTION
 ========================= */
-
 .footer-bottom {
     padding-top: 1.875rem;
     border-top: 0.0625rem solid rgba(255, 255, 255, 0.08);
@@ -3563,7 +3543,6 @@ button:active {
 /* =========================
    RESPONSIVE STYLES
 ========================= */
-
 /* Tablet */
 @media (max-width: 992px) {
     .footer-section {
@@ -3745,7 +3724,6 @@ button:active {
    منع ظهور أي أزرار تمرير جانبية
    للتمرير العمودي فقط (ليس الأفقي للكاروسيل)
 ========================= */
-
 /* إخفاء أي زر تمرير جانبي (Back to Top أو Floating Navigation) */
 .scroll-to-top,
 .back-to-top,

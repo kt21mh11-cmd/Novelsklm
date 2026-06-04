@@ -3753,8 +3753,3 @@ html {
     scroll-behavior: smooth;
     /* هذا يسمح بالتمرير السلس عند النقر على روابط داخلية، ولا يضيف أزراراً */
 }
-
-/* منع أي hover effects لأزرار غير مرغوب فيها */
-a[href*="#"]:not(.no-smooth):not(.nav-link):not(.mobile-nav-link) {
-    scroll-behavior: smooth;
-}

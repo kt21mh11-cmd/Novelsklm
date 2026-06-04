@@ -200,7 +200,7 @@ const novelsData = [
         category: "فانتازيا",
         price: 14.99,
         rating: 4.8,
-        image: "https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?q=80&w=1200&auto=format&fit=crop"
+        image: "images/ImgNV9.jpg"
     },
     {
         id: 5,
